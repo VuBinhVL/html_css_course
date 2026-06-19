@@ -7,6 +7,15 @@
     border-radius: 2px;
     cursor: pointer;
     margin-right: 5px;
+    transition: opacity 0.15s;
+  }
+
+  .subscribe-button:hover {
+    opacity: 0.8;
+  }
+
+  .subscribe-button:active {
+    opacity: 0.5;
   }
 
   .join-button {
@@ -19,7 +28,20 @@
     color: rgba(44, 118, 211);
     border-radius: 2px;
     width: 60px;
+    transition:
+      background-color 0.15s,
+      color 0.15s;
   }
+
+  .join-button:hover {
+    background-color: rgba(44, 118, 211);
+    color: white;
+  }
+
+  .join-button:active {
+    opacity: 0.5;
+  }
+
   .tweet-button {
     background-color: rgba(44, 118, 211);
     color: white;
@@ -30,6 +52,11 @@
     font-weight: bold;
     cursor: pointer;
     margin-left: 5px;
+    transition: box-shadow 0.15s;
+  }
+
+  .tweet-button:hover {
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.15);
   }
 </style>
 <button class="subscribe-button">SUBSCRIBE</button>
