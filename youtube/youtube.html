@@ -2,24 +2,43 @@
   <head>
     <title>Youtube</title>
     <style>
-      .input {
+      .search-input {
         width: 100px;
         height: 30px;
         margin-bottom: 10px;
+        display: block;
       }
 
       .image {
         width: 300px;
         height: 200px;
-        display: block;
+      }
+      p {
+        width: 300px;
+      }
+
+      .video-preview {
+        width: 300px;
+        margin-right: 5px;
+        display: inline-block;
+        vertical-align: top;
       }
     </style>
   </head>
   <body>
-    <input class="input" placeholder="Search" />
-    <img class="image" src="thumbnails/thumbnail-1.png" />
-    <p>Talking Tech and AI with Google CEO Sundar Pichai!</p>
-    <p>Marques Brownlee</p>
-    <p>3.4M views · 6 months ago</p>
+    <input class="search-input" placeholder="Search" />
+    <div class="video-preview">
+      <img class="image" src="thumbnails/thumbnail-1.png" />
+      <p>Talking Tech and AI with Google CEO Sundar Pichai!</p>
+      <p>Marques Brownlee</p>
+      <p>3.4M views · 6 months ago</p>
+    </div>
+
+    <div class="video-preview">
+      <img class="image" src="thumbnails/thumbnail-2.png" />
+      <p>Try Not To Laugh Challenge #9</p>
+      <p>Markiplier</p>
+      <p>19M views · 4 years ago</p>
+    </div>
   </body>
 </html>
